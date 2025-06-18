@@ -79,15 +79,9 @@ section {
   align-items: center;
   justify-content: center;
   color: #fff;
-}
-
-section:nth-child(odd) {
   background-color: #282828;
 }
 
-section:nth-child(even) {
-  background-color: #3c3c3c;
-}
 
 section > div {
   width: 80%;
