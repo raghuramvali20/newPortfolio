@@ -1,0 +1,116 @@
+.about_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.95), rgba(2, 6, 23, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner_about_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(1.25rem, 3vw, 2rem);
+    width: 100%;
+}
+
+.inner_about_section > img {
+    border-radius: 24px;
+    width: min(280px, 32%);
+    height: auto;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+.i_a_s_left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: min(620px, 100%);
+    gap: clamp(0.7rem, 1.4vw, 0.95rem);
+}
+
+.eyebrow {
+    color: #eab308;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.i_a_s_left > h2 {
+    font-size: 1.4rem;
+    color: #eab308;
+}
+
+.i_a_s_left > h1 {
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    color: #fff;
+    line-height: 1.1;
+}
+
+.i_a_s_left > p {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.75rem;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.primary-btn {
+    background: #eab308;
+    color: #111827;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 900px) {
+    .inner_about_section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inner_about_section > img {
+        width: min(240px, 70%);
+        margin-top: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .i_a_s_left > h2 {
+        font-size: 1rem;
+    }
+
+    .i_a_s_left > h1 {
+        font-size: 2rem;
+    }
+
+    .i_a_s_left > p {
+        font-size: 0.95rem;
+    }
+}

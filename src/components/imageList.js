@@ -1,5 +1,5 @@
 const  skillsType = {
-    technical: ['html.svg', 'css.svg', 'javascript.svg', 'reactjs.svg', 'nodejs.svg', 'github.svg', 'java.svg', 'python.svg'],
+    technical: ['html.svg', 'css.svg', 'javascript.svg', 'mongodb.svg', 'express.svg','reactjs.svg', 'nodejs.svg', 'github.svg', 'java.svg', 'python.svg','dart.svg', 'flutter.svg', 'mysql.svg'],
     soft: ['selflearning.svg', 'team.svg', 'time-management.svg', 'communication.svg']
 
 }
