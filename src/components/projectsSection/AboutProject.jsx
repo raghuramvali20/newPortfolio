@@ -11,11 +11,6 @@ const AboutProject = ({ project, onClose }) => {
                 </button>
                 <h2>{project.title}</h2>
 
-                <div id="project-screenshots">
-                    {project.images?.map((image, index) => (
-                        <img key={index} src={image} alt={`${project.title} screenshot ${index + 1}`} />
-                    ))}
-                </div>
 
                 <div className="project-meta">
                     <h3>Tech Stack</h3>
@@ -35,6 +30,13 @@ const AboutProject = ({ project, onClose }) => {
                         </a>
                     )}
                 </div>
+
+                 <div id="project-screenshots">
+                    {project.images?.map((image, index) => (
+                        <img key={index} src={image} alt={`${project.title} screenshot ${index + 1}`} />
+                    ))}
+                </div>
+                
             </div>
         </div>
     );
